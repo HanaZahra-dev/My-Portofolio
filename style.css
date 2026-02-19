@@ -1,0 +1,656 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 90px; /* Sesuaikan tinggi navbar */
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f2630;
+    color: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 100px;
+}
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#typing-name::after {
+    content: "|";
+    animation: blink 1s infinite;
+    white-space: nowrap;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+.delay-4 { animation-delay: 0.15s; }
+.delay-5 { animation-delay: 0.20s; }
+.delay-6 { animation-delay: 0.25s; }
+
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1b222b; /* warna navbar kamu */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #1b222b;
+}
+
+nav a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff2e63;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn-primary {
+    background: #ff2e63;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 15px #ff2e63;
+}
+.btn-view {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 15px;
+    background: #ff2e63;
+    border-radius: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+/* HERO */
+.hero-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* FRAME BULAT (warna sama bg) */
+.img-frame {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background-color: #1f2630;   /* sama dengan background */
+    padding: 15px;               /* ini jadi bingkai */
+    position: relative;
+    top: -40px;
+    right: -40px;
+    box-shadow: 0 0 60px rgba(255, 46, 99, 0.6);
+    transition: 0.3s ease;
+}
+
+/* FOTO */
+.img-frame img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Hover halus */
+.img-frame:hover {
+    transform: scale(1.03);
+}
+
+/* Hover glow */
+.img-frame:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 60px rgba(255, 46, 99, 0.6);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.welcome {
+    color: #ff2e63;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+.education {
+    padding: 80px;
+    text-align: center;
+}
+
+.education h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.edu-card {
+    background: #2a313c;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.edu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(255, 46, 99, 0.3);
+}
+
+.edu-card span {
+    display: block;
+    color: #ff2e63;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: #ff2e63;
+}
+
+.hero p {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.icon:hover {
+    background: #ff2e63;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 46, 99, 0.6);
+    transform: translateY(-3px);
+}
+
+/* IMAGE */
+.hero-img img {
+    width: 350px;
+    border-radius: 10px;
+}
+.tools {
+    padding: 100px 80px;
+}
+
+.tools h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 32px;
+}
+
+.tools-group {
+    margin-bottom: 60px;
+}
+
+.tools-group h3 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    border-left: 4px solid #ff2e63;
+    padding-left: 10px;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.tool-card {
+    background: #1f2630;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto; /* center */
+    transition: 0.3s ease;
+    position: relative;
+}
+
+
+.tool-card i {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #ff2e63;
+}
+
+.tool-card h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.tool-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(255, 46, 99, 0.3);
+}
+
+.level {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.basic {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.intermediate {
+    background: #ff2e63;
+    color: white;
+}
+
+/* FEATURES */
+.features {
+    padding: 80px;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #2a313c;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 46, 99, 0.4);
+}
+
+.card p {
+    color: #bbb;
+    margin-top: 15px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    padding: 80px;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.portfolio-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border-radius: 10px;
+    aspect-ratio: 16/9; /* Tambahkan ini untuk rasio seragam */
+    background-color: #2a313c; /* Background saat gambar loading */
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 16/9; /* Samakan rasio dengan container */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 46, 99, 0.85);
+    padding: 20px;
+    transform: translateY(100%);
+    transition: 0.3s;
+    z-index: 5;
+}
+
+.portfolio-card:hover .overlay {
+    transform: translateY(0);
+}
+.portfolio-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 25px;
+}
+
+.portfolio-center .portfolio-card {
+    width: 32%;
+    min-width: 300px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+.center-card {
+    grid-column: 2;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #1b222b;
+    color: #aaa;
+}
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    nav {
+        display: none; /* optional, atau bisa bikin menu toggle nanti */
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-img {
+        width: 100%;
+    }
+
+    .img-frame {
+        width: 200px; /* Kurangi dari 250px untuk layar tablet/phone */
+        height: 200px;
+        margin: auto;
+        top: 0;
+        right: 0;
+        padding: 10px; /* Kurangi padding agar bingkai tidak terlalu tebal */
+        box-shadow: 0 0 40px rgba(255, 46, 99, 0.4); /* Kurangi glow untuk mobile */
+    }
+    .img-frame:hover {
+        transform: none; /* Matikan scale */
+        box-shadow: 0 0 40px rgba(255, 46, 99, 0.4); /* Tetap ada glow ringan */
+    }
+    .img-frame img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .features {
+        padding: 40px 20px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio {
+        padding: 40px 20px;
+    }
+
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 kolom */
+        gap: 20px;
+    }
+    .portfolio-center {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        gap: 25px;
+    }
+    
+    .portfolio-center .portfolio-card {
+        width: 100%;
+        height: 100%;
+        min-width: 300px;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+    .portfolio-card > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+
+    .tools {
+        padding: 40px 20px;
+    }
+
+}
+@media (max-width: 480px) {
+    .img-frame {
+        width: 150px; /* Lebih kecil lagi */
+        height: 150px;
+        padding: 8px; /* Padding lebih tipis */
+        box-shadow: 0 0 30px rgba(255, 46, 99, 0.3); /* Glow lebih halus */
+    }
+
+    .img-frame:hover {
+        box-shadow: 0 0 30px rgba(255, 46, 99, 0.3); /* Tetap konsisten */
+    }
+}
+/* Slider Styles */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; /* Sesuai tinggi img sebelumnya */
+}
+
+.slider {
+    display: flex;
+    width: 300%; /* 3 gambar, jadi 3x lebar */
+    height: 100%;
+    transition: transform 0.5s ease; /* Animasi slide */
+}
+
+.slider img {
+    width: 33.333%; /* Setiap gambar 1/3 lebar container */
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 16/9;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 46, 99, 0.8);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: rgba(255, 46, 99, 1);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Pastikan overlay tetap di atas slider */
+.portfolio-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 46, 99, 0.85);
+    padding: 20px;
+    transform: translateY(100%);
+    transition: 0.3s;
+    z-index: 5; /* Di bawah tombol slider */
+}
+
+/* HAMBURGER MENU STYLES */
+.hamburger {
+    display: none; /* Sembunyikan di desktop */
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #bbb;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* ANIMASI HAMBURGER KETIKA AKTIF */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* NAV MENU STYLES */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* MOBILE RESPONSIVE - Update untuk navbar */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        justify-content: space-between; /* Pastikan logo, nav, hamburger sejajar */
+    }
+
+    .hamburger {
+        display: flex; /* Tampilkan hamburger di mobile */
+    }
+
+    .nav-menu {
+        position: fixed; /* Fixed untuk overlay */
+        top: 70px; /* Di bawah header */
+        left: -100%; /* Sembunyikan di luar layar */
+        width: 100%;
+        height: calc(100vh - 70px); /* Tinggi penuh minus header */
+        background-color: #1b222b;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.3s ease; /* Animasi slide */
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        left: 0; /* Tampilkan dengan slide */
+    }
+
+    .nav-menu a {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+}

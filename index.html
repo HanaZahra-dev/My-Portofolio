@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tambahkan untuk responsivitas mobile -->
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <div class="logo">Portofolio</div> <!-- Asumsikan logo Anda -->
+    <nav class="nav-menu"> <!-- Tambahkan class untuk styling -->
+        <a href="#hero">Home</a>
+        <a href="#education">Education</a>
+        <a href="#what i do">What I Do</a>
+        <a href="#tools">My skills & Tools</a>
+        <a href="#portofolio">My Project</a>
+    </nav>
+    <div class="hamburger"> <!-- Tombol hamburger baru -->
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+    <div class="hero-text fade-up delay-1">
+        <span class="welcome">WELCOME TO MY PORTFOLIO</span>
+        <h1>Hi, I’m <span class="highlight" id="typing-name"></span><br> Web Developer & Data Enthusiast</h1>
+        <p>Mahasiswa Sistem Informasi yang memiliki pengalaman dalam
+            coding dan pemrograman, termasuk membuat website sederhana sebagai
+            bagian dari proyek akademik. Sangat tertarik dengan data science, analisis
+            data, dan pengolahan data, serta senang mengeksplorasi penulisan kreatif,
+            seperti puisi, esai, dan refleksi pribadi</p>
+
+        <div class="socials">
+            <a href="www.linkedin.com/in/hana-zahra-a979313a5" class="icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:rzhana629@gmail.com?subject=Portfolio%20Contact" class="icon"><i class="fab fa-at" title="send me an email"></i></a>
+            <a href="https://github.com/HanaZahra-dev" class="icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/hanarhmy_/" class="icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="hero-img">
+        <div class="img-frame fade-up delay-2">
+            <img src="assets/images/hana.png" alt="Profile">
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education" id="education">
+    <h2>Education</h2>
+    <div class="edu-card reveal">
+        <h3>S1 Sistem Informasi</h3>
+        <span>Universitas Bina Sarana Informatika (2024 - Sekarang)</span>
+        <p>Ipk: 4.00/4.00</p>
+    </div>
+</section>
+
+<!-- WHAT I DO -->
+<section class="features" id="what i do">
+    <h2>What I Do</h2>
+    <div class="card-grid reveal">
+        <div class="card fade-up delay-4">
+            <h3>Web Development</h3>
+            <p>Membangun website menggunakan HTML, PHP, Tailwind CSS, dan MySQL, termasuk fitur input, penyimpanan, dan tampilan data secara dinamis.</p>
+        </div>
+        <div class="card fade-up delay-5">
+            <h3>Backend Development (Basic)</h3>
+            <p>Mengembangkan logika backend menggunakan PHP dan MySQL, termasuk pemrosesan data, penyimpanan database, dan implementasi fitur CRUD pada website.</p>
+        </div>
+        <div class="card fade-up delay-6">
+            <h3>Data Analysis</h3>
+            <p>Mengolah dan menganalisis data menggunakan Excel dan Python dasar untuk menemukan pola dan menghasilkan informasi yang berguna.</p>
+        </div>
+        <div class="card fade-up delay-4">
+            <h3>Database Management</h3>
+            <p>Merancang dan mengelola database MySQL, termasuk struktur tabel, relasi data, dan query untuk penyimpanan serta akses data.</p>
+        </div>
+        <div class="card fade-up delay-4">
+            <h3>Data Visualization</h3>
+            <p>Menyajikan data dalam bentuk tabel dan grafik agar lebih mudah dipahami dan dianalisis.</p>
+        </div>
+        <div class="card fade-up delay-4">
+            <h3>Content Writing</h3>
+            <p>Menulis konten yang terstruktur, jelas, dan informatif sesuai tujuan dan kebutuhan.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS & TOOLS -->
+<section id="tools" class="tools">
+    <h2>My Skills & Tools</h2>
+    <div class="tools-container">
+        <!-- Web Dev -->
+        <div class="tools-group reveal">
+            <h3>Web Development</h3>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <i class="devicon-html5-plain colored"></i>
+                    <h4>HTML</h4>
+                    <span class="level intermediate">Intermediate</span>
+                </div>
+                <div class="tool-card">
+                    <i class="devicon-php-plain colored"></i>
+                    <h4>PHP</h4>
+                    <span class="level basic">Basic</span>
+                </div>
+                <div class="tool-card">
+                    <i class="devicon-css3-plain colored"></i>
+                    <h4>CSS</h4>
+                    <span class="level basic">Basic</span>
+                </div>
+                <div class="tool-card">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <h4>JavaScript</h4>
+                    <span class="level basic">Basic</span>
+                </div>
+                <div class="tool-card">
+                    <i class="devicon-laravel-plain colored"></i>
+                    <h4>Laravel</h4>
+                    <span class="level basic">Basic</span>
+                </div>
+            </div>
+        </div>
+        <!-- Database -->
+        <div class="tools-group reveal">
+            <h3>Database</h3>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <i class="devicon-mysql-plain colored"></i>
+                    <h4>MySQL</h4>
+                    <span class="level basic">Basic</span>
+                </div>
+                <div class="tool-card">
+                    <i class="devicon-azuresqldatabase-plain colored"></i>
+                    <h4>SQL</h4>
+                    <span class="level intermediate">Intermediate</span>
+                </div>
+            </div>
+        </div>
+        <!-- Data -->
+        <div class="tools-group reveal">
+            <h3>Data & Analysis</h3>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <i class="devicon-python-plain colored"></i>
+                    <h4>Python</h4>
+                    <span class="level intermediate">Intermediate</span>
+                </div>
+                <div class="tool-card">
+                    <i class="devicon-pandas-plain colored"></i>
+                    <h4>pandas</h4>
+                    <span class="level intermediate">Intermediate</span>
+                </div>
+                <div class="tool-card">
+                    <i class="devicon-jupyter-plain colored"></i>
+                    <h4>Jupyter Notebook</h4>
+                    <span class="level intermediate">Intermediate</span>
+                </div>
+            </div>
+        </div>
+        <!-- Data Visualization -->
+        <div class="tools-group reveal">
+            <h3>Data Visualization</h3>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <i class="devicon-matplotlib-plain colored"></i>
+                    <h4>Matplotlib</h4>
+                    <span class="level basic">Basic</span>
+                </div>
+            </div>
+        </div>
+        <!-- Tools -->
+        <div class="tools-group reveal">
+            <h3>Tools</h3>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <i class="devicon-github-plain colored"></i>
+                    <h4>GitHub</h4>
+                    <span class="level basic">Basic</span>
+                </div>
+                <div class="tool-card">
+                    <i class="devicon-vscode-plain colored"></i>
+                    <h4>VS Code</h4>
+                    <span class="level intermediate">Intermediate</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="portfolio" id="portofolio">
+    <h2>My Project</h2>
+
+    <!-- GRID BARIS PERTAMA -->
+    <div class="portfolio-grid reveal">
+        <div class="portfolio-card fade-up">
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="assets/images/Homepage.png" alt="Website Akademik 1">
+                    <img src="assets/images/pro1.png" alt="Website Akademik 2"> 
+                    <img src="assets/images/pro1.3.png" alt="Website Akademik 3"> 
+                    <img src="assets/images/pro1.4.png" alt="Website Akademik 4">
+                    <img src="assets/images/pro1.3.png" alt="Website Akademik 5">
+                    <img src="assets/images/pro1.5.png" alt="Website Akademik 6">
+                </div>
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
+            <div class="overlay">
+                <h4>Website Akademik</h4>
+                <a href="https://github.com/HanaZahra-dev/Website-Pendidikan-Berkualitas-" class="btn-view">View Project</a>
+            </div>
+        </div>
+    
+        <div class="portfolio-card fade-up">
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="assets/images/e-pegawai.png" alt="E-pegawai 1">
+                    <img src="assets/images/pro2.png" alt="E-pegawai 2"> <!-- Tambahan gambar -->
+                    <img src="assets/images/pro2.3.png" alt="E-pegawai 3"> <!-- Tambahan gambar -->
+                </div>
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
+            <div class="overlay">
+                <h4>E-pegawai</h4>
+                <a href="https://github.com/HanaZahra-dev/E-pegawai-laravel" class="btn-view">View Project</a>
+            </div>
+        </div>
+        <!-- Tambahkan kartu lain jika perlu, dengan struktur yang sama -->
+        <div class="portfolio-card fade-up">
+            <img src="assets/images/data.jpg" alt="Data Analyst">
+            <div class="overlay">
+                <h4>Data Analyst</h4>
+                <a href="https://github.com/HanaZahra-dev/Data-Analyst_Project-1" class="btn-view">View Project</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- GRID BARIS KEDUA (CENTER) -->
+    <div class="portfolio-center reveal">
+        <div class="portfolio-card fade-up">
+            <img src="assets/images/ERP.jpg" alt="ERP Inventory Database">
+            <div class="overlay">
+                <h4>ERP Inventory Database</h4>
+                <a href="https://github.com/HanaZahra-dev/ERP-Inventory-Database" class="btn-view">View Project</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Hana Rahmaya Zahra.</p>
+</footer>
+
+<script>
+    const text = "Hana Rahmaya";
+    const typingElement = document.getElementById("typing-name");
+    let index = 0;
+    
+    function typeEffect() {
+        if (index < text.length) {
+            typingElement.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeEffect, 100);
+        }
+    }
+    
+    window.onload = typeEffect;
+</script>
+<script>
+    const reveals = document.querySelectorAll(".reveal");
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+    
+    reveals.forEach(reveal => {
+        observer.observe(reveal);
+    });
+</script>
+<script>
+    window.addEventListener("scroll", function() {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+            header.style.background = "#141a21";
+            header.style.boxShadow = "0 5px 20px rgba(0,0,0,0.5)";
+        } else {
+            header.style.background = "#1b222b";
+            header.style.boxShadow = "none";
+        }
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const sliders = document.querySelectorAll('.slider');
+    
+    sliders.forEach(slider => {
+        const container = slider.parentElement;
+        const prevBtn = container.querySelector('.prev-btn');
+        const nextBtn = container.querySelector('.next-btn');
+        let currentIndex = 0;
+        const totalSlides = slider.children.length; // Jumlah gambar per slider
+        
+        function updateSlider() {
+            const translateX = -currentIndex * (100 / totalSlides);
+            slider.style.transform = `translateX(${translateX}%)`;
+        }
+        
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        });
+        
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        });
+    });
+});
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active'); // Animasi hamburger
+        navMenu.classList.toggle('active'); // Toggle menu
+    });
+
+    // Opsional: Tutup menu saat klik link atau di luar
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+});
+</script>
+</body>
+</html>

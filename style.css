@@ -5,7 +5,7 @@
 }
 
 body {
-    padding-top: 90px; /* Sesuaikan tinggi navbar */
+    padding-top: 90px; 
     font-family: 'Poppins', sans-serif;
     background-color: #1f2630;
     color: #fff;
@@ -42,9 +42,6 @@ section {
 .delay-1 { animation-delay: 0.3s; }
 .delay-2 { animation-delay: 0.6s; }
 .delay-3 { animation-delay: 0.9s; }
-.delay-4 { animation-delay: 0.15s; }
-.delay-5 { animation-delay: 0.20s; }
-.delay-6 { animation-delay: 0.25s; }
 
 .reveal {
     opacity: 0;
@@ -56,7 +53,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #1b222b; /* warna navbar kamu */
+    background-color: #1b222b; 
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -117,22 +114,18 @@ nav a:hover {
     text-decoration: none;
     color: white;
 }
-
-/* HERO */
 .hero-img {
     width: 50%;
     display: flex;
     justify-content: center;
     position: relative;
 }
-
-/* FRAME BULAT (warna sama bg) */
 .img-frame {
     width: 420px;
     height: 420px;
     border-radius: 50%;
-    background-color: #1f2630;   /* sama dengan background */
-    padding: 15px;               /* ini jadi bingkai */
+    background-color: #1f2630;   
+    padding: 15px;               
     position: relative;
     top: -40px;
     right: -40px;
@@ -140,7 +133,7 @@ nav a:hover {
     transition: 0.3s ease;
 }
 
-/* FOTO */
+
 .img-frame img {
     width: 100%;
     height: 100%;
@@ -148,12 +141,12 @@ nav a:hover {
     object-fit: cover;
 }
 
-/* Hover halus */
+
 .img-frame:hover {
     transform: scale(1.03);
 }
 
-/* Hover glow */
+
 .img-frame:hover {
     transform: scale(1.05);
     box-shadow: 0 0 60px rgba(255, 46, 99, 0.6);
@@ -192,22 +185,29 @@ nav a:hover {
 
 .edu-card {
     background: #2a313c;
-    padding: 30px;
+    padding: 30px 40px;
     border-radius: 15px;
-    max-width: 600px;
-    margin: auto;
     transition: 0.3s;
+
+    width: 350px; 
 }
 
 .edu-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(255, 46, 99, 0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(255, 46, 99, 0.25);
 }
 
 .edu-card span {
     display: block;
     color: #ff2e63;
     margin: 10px 0;
+}
+.education-wrapper {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .highlight {
@@ -374,8 +374,8 @@ nav a:hover {
     overflow: hidden;
     border-radius: 10px;
     border-radius: 10px;
-    aspect-ratio: 16/9; /* Tambahkan ini untuk rasio seragam */
-    background-color: #2a313c; /* Background saat gambar loading */
+    aspect-ratio: 16/9;
+    background-color: #2a313c; 
 }
 
 .portfolio-card img {
@@ -383,7 +383,7 @@ nav a:hover {
     height: 100%;
     object-fit: cover;
     display: block;
-    aspect-ratio: 16/9; /* Samakan rasio dengan container */
+    aspect-ratio: 16/9; 
 }
 
 .overlay {
@@ -424,7 +424,7 @@ footer {
     background: #1b222b;
     color: #aaa;
 }
-/* MOBILE RESPONSIVE */
+/* MOBILE  */
 @media (max-width: 768px) {
 
     header {
@@ -432,7 +432,7 @@ footer {
     }
 
     nav {
-        display: none; /* optional, atau bisa bikin menu toggle nanti */
+        display: none; 
     }
 
     .hero {
@@ -447,17 +447,17 @@ footer {
     }
 
     .img-frame {
-        width: 200px; /* Kurangi dari 250px untuk layar tablet/phone */
+        width: 200px;
         height: 200px;
         margin: auto;
         top: 0;
         right: 0;
-        padding: 10px; /* Kurangi padding agar bingkai tidak terlalu tebal */
-        box-shadow: 0 0 40px rgba(255, 46, 99, 0.4); /* Kurangi glow untuk mobile */
+        padding: 10px; 
+        box-shadow: 0 0 40px rgba(255, 46, 99, 0.4); 
     }
     .img-frame:hover {
-        transform: none; /* Matikan scale */
-        box-shadow: 0 0 40px rgba(255, 46, 99, 0.4); /* Tetap ada glow ringan */
+        transform: none; 
+        box-shadow: 0 0 40px rgba(255, 46, 99, 0.4); 
     }
     .img-frame img {
         border-radius: 50%;
@@ -471,6 +471,10 @@ footer {
 
     .card-grid {
         grid-template-columns: 1fr;
+    }
+    .edu-card {
+        width: 100%;
+        max-width: 400px;
     }
 
     .portfolio {
@@ -510,35 +514,41 @@ footer {
     }
 
 }
+/*buat yg lebih kecil*/
 @media (max-width: 480px) {
     .img-frame {
-        width: 150px; /* Lebih kecil lagi */
+        width: 150px; 
         height: 150px;
-        padding: 8px; /* Padding lebih tipis */
-        box-shadow: 0 0 30px rgba(255, 46, 99, 0.3); /* Glow lebih halus */
+        padding: 8px; 
+        box-shadow: 0 0 30px rgba(255, 46, 99, 0.3); 
     }
 
     .img-frame:hover {
-        box-shadow: 0 0 30px rgba(255, 46, 99, 0.3); /* Tetap konsisten */
+        box-shadow: 0 0 30px rgba(255, 46, 99, 0.3); 
     }
 }
-/* Slider Styles */
+@media (max-width: 768px) {
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .slider-container {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100%; /* Sesuai tinggi img sebelumnya */
+    height: 100%; 
 }
 
 .slider {
     display: flex;
-    width: 300%; /* 3 gambar, jadi 3x lebar */
+    width: 300%; 
     height: 100%;
-    transition: transform 0.5s ease; /* Animasi slide */
+    transition: transform 0.5s ease;
 }
 
 .slider img {
-    width: 33.333%; /* Setiap gambar 1/3 lebar container */
+    width: 33.333%; 
     height: 100%;
     object-fit: cover;
     display: block;
@@ -572,7 +582,7 @@ footer {
     right: 10px;
 }
 
-/* Pastikan overlay tetap di atas slider */
+
 .portfolio-card .overlay {
     position: absolute;
     bottom: 0;
@@ -582,12 +592,12 @@ footer {
     padding: 20px;
     transform: translateY(100%);
     transition: 0.3s;
-    z-index: 5; /* Di bawah tombol slider */
+    z-index: 5; 
 }
 
-/* HAMBURGER MENU STYLES */
+
 .hamburger {
-    display: none; /* Sembunyikan di desktop */
+    display: none; 
     flex-direction: column;
     cursor: pointer;
     padding: 10px;
@@ -601,7 +611,7 @@ footer {
     transition: 0.3s;
 }
 
-/* ANIMASI HAMBURGER KETIKA AKTIF */
+
 .hamburger.active .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -614,39 +624,39 @@ footer {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* NAV MENU STYLES */
+
 .nav-menu {
     display: flex;
     align-items: center;
 }
 
-/* MOBILE RESPONSIVE - Update untuk navbar */
+/* MOBILE */
 @media (max-width: 768px) {
     header {
         padding: 15px 20px;
-        justify-content: space-between; /* Pastikan logo, nav, hamburger sejajar */
+        justify-content: space-between; 
     }
 
     .hamburger {
-        display: flex; /* Tampilkan hamburger di mobile */
+        display: flex; 
     }
 
     .nav-menu {
-        position: fixed; /* Fixed untuk overlay */
-        top: 70px; /* Di bawah header */
-        left: -100%; /* Sembunyikan di luar layar */
+        position: fixed; 
+        top: 70px; 
+        left: -100%; 
         width: 100%;
-        height: calc(100vh - 70px); /* Tinggi penuh minus header */
+        height: calc(100vh - 70px); 
         background-color: #1b222b;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: left 0.3s ease; /* Animasi slide */
+        transition: left 0.3s ease; 
         z-index: 999;
     }
 
     .nav-menu.active {
-        left: 0; /* Tampilkan dengan slide */
+        left: 0; 
     }
 
     .nav-menu a {

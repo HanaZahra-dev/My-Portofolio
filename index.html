@@ -1,370 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tambahkan untuk responsivitas mobile -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hana Rahmaya — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header>
-    <div class="logo">Portofolio</div> 
-    <nav class="nav-menu"> 
-        <a href="#hero">Home</a>
-        <a href="#education">Education</a>
-        <a href="#what i do">What I Do</a>
-        <a href="#tools">My skills & Tools</a>
-        <a href="#portofolio">My Project</a>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">HRZ<span class="logo-dot"></span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
     </nav>
-    <div class="hamburger"> <!-- Tombol hamburger baru -->
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
+    <a href="mailto:hanazahrahma@gmail.com" class="nav-cta">Let's Talk</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<!-- HERO SECTION -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" class="mob-link">About</a>
+  <a href="#education" class="mob-link">Education</a>
+  <a href="#skills" class="mob-link">Skills</a>
+  <a href="#projects" class="mob-link">Projects</a>
+  <a href="mailto:rzhana629@gmail.com" class="mob-cta">Let's Talk</a>
+</div>
+
 <section class="hero" id="hero">
-    <div class="hero-text fade-up delay-1">
-        <span class="welcome">WELCOME TO MY PORTFOLIO</span>
-        <h1>Hi, I’m <span class="highlight" id="typing-name"></span><br> Web Developer & Data Enthusiast</h1>
-        <p>Mahasiswa Sistem Informasi yang antusias dalam pengembangan web dan analisis data. 
-            Saya juga sangat senang mengeksplorasi penulisan kreatif seperti esai, puisi, hingga refleksi pribadi. 
-            Sebagai pribadi yang disiplin dan bertanggung jawab, 
-            saya selalu berusaha mengembangkan diri melalui proyek-proyek baru yang menantang.</p>
-
-        <div class="socials">
-            <a href="www.linkedin.com/in/hana-zahra-a979313a5" class="icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:rzhana629@gmail.com?subject=Portfolio%20Contact" class="icon"><i class="fab fa-at" title="send me an email"></i></a>
-            <a href="https://github.com/HanaZahra-dev" class="icon"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/hanarhmy_/" class="icon"><i class="fab fa-instagram"></i></a>
+  <div class="hero-bg-grid"></div>
+  <div class="hero-content" id="about">
+    <div class="hero-left">
+      <span class="hero-eyebrow"><span class="dot-pulse"></span>Available for opportunities</span>
+      <h1 class="hero-title">
+        <span class="title-line">Hana</span>
+        <span class="title-line accent-line">Rahmaya.</span>
+      </h1>
+      <p class="hero-role">Web Developer <span class="role-sep">×</span> Database Enthusiast <span class="role-sep">×</span>Data Analytics Explorer</p> 
+      <p class="hero-bio">
+        Information Systems student passionate about Web Development, Database Systems, Data Analytics, and Data Science. 
+        I enjoy building responsive web applications, designing efficient databases, 
+        and transforming data into meaningful insights through continuous learning and real-world projects.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">See My Work <i class="fas fa-arrow-right"></i></a>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/hana-zahra-a979313a5" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/HanaZahra-dev" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/hanarhmy_/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:rzhana629@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
+      </div>
     </div>
-
-    <div class="hero-img">
-        <div class="img-frame fade-up delay-2">
-            <img src="assets/images/hana.png" alt="Profile">
+    <div class="hero-right">
+      <div class="photo-frame">
+        <div class="photo-ring"></div>
+        <img src="assets/images/hana.png" alt="Hana Rahmaya Zahra" class="hero-photo">
+        <div class="photo-badge">
+          <span class="badge-emoji"></span>
+          <span>S1 Sistem Informasi</span>
         </div>
+      </div>
     </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-inner">
+    <div class="section-label">What I Do</div>
+    <h2 class="section-title">Capabilities</h2>
+    <div class="services-grid">
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fas fa-code"></i></div>
+        <h3>Web Development</h3>
+        <p>Membangun website responsif dengan HTML, CSS, PHP, JavaScript, dan Laravel — dari tampilan hingga logika backend.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fas fa-database"></i></div>
+        <h3>Database Management</h3>
+        <p>Merancang struktur tabel, relasi data, dan query MySQL yang efisien untuk kebutuhan aplikasi.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+        <h3>Data Analysis</h3>
+        <p>Mengolah dataset menggunakan Python & pandas untuk menemukan pola dan insight yang actionable.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fas fa-chart-pie"></i></div>
+        <h3>Data Visualization</h3>
+        <p>Menyajikan data dalam bentuk chart dan grafik yang mudah dipahami menggunakan Matplotlib.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fas fa-server"></i></div>
+        <h3>Backend Development</h3>
+        <p>Implementasi fitur CRUD, pemrosesan form, dan manajemen session menggunakan PHP dan Laravel.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+        <h3>Content Writing</h3>
+        <p>Menulis konten terstruktur — esai, dokumentasi, refleksi, atau konten kreatif yang informatif.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="education" id="education">
-    <h2>Education</h2>
-
-    <div class="education-wrapper">
-
-        <div class="edu-card reveal">
-            <h3>Universitas Bina Sarana Informatika</h3>
-            <span>S1 Sistem Informasi</span>
-            <p>(2024 - Sekarang)</p>
+  <div class="section-inner">
+    <div class="section-label">Background</div>
+    <h2 class="section-title">Education</h2>
+    <div class="edu-timeline">
+      <div class="edu-item" data-reveal>
+        <div class="edu-year">2024 – Now</div>
+        <div class="edu-card">
+          <div class="edu-icon"></div>
+          <div class="edu-info">
+            <h3>S1 Sistem Informasi</h3>
+            <span class="edu-school">Universitas Bina Sarana Informatika</span>
+            <p>Mempelajari rekayasa perangkat lunak, basis data, analisis sistem, dan pengembangan aplikasi berbasis web.</p>
+          </div>
         </div>
-
-        <div class="edu-card reveal">
+      </div>
+      <div class="edu-item" data-reveal>
+        <div class="edu-year">2019 – 2024</div>
+        <div class="edu-card">
+          <div class="edu-icon"></div>
+          <div class="edu-info">
             <h3>SMA IT Daarul Rahman 3</h3>
-            <span>Jurusan IPA</span>
-            <p>(2019 - 2024)</p>
+            <span class="edu-school">Jurusan IPA</span>
+            <p>Membentuk fondasi berpikir analitis dan logis melalui ilmu pengetahuan alam dan program berbasis nilai Islam.</p>
+          </div>
         </div>
-
+      </div>
     </div>
-</section>
-<!-- WHAT I DO -->
-<section class="features" id="what i do">
-    <h2>What I Do</h2>
-    <div class="card-grid reveal">
-        <div class="card fade-up delay-4">
-            <h3>Web Development</h3>
-            <p>Membangun website menggunakan HTML, PHP, Tailwind CSS, dan MySQL, termasuk fitur input, penyimpanan, dan tampilan data secara dinamis.</p>
-        </div>
-        <div class="card fade-up delay-5">
-            <h3>Backend Development (Basic)</h3>
-            <p>Mengembangkan logika backend menggunakan PHP dan MySQL, termasuk pemrosesan data, penyimpanan database, dan implementasi fitur CRUD pada website.</p>
-        </div>
-        <div class="card fade-up delay-6">
-            <h3>Data Analysis</h3>
-            <p>Mengolah dan menganalisis data menggunakan Excel dan Python dasar untuk menemukan pola dan menghasilkan informasi yang berguna.</p>
-        </div>
-        <div class="card fade-up delay-4">
-            <h3>Database Management</h3>
-            <p>Merancang dan mengelola database MySQL, termasuk struktur tabel, relasi data, dan query untuk penyimpanan serta akses data.</p>
-        </div>
-        <div class="card fade-up delay-4">
-            <h3>Data Visualization</h3>
-            <p>Menyajikan data dalam bentuk tabel dan grafik agar lebih mudah dipahami dan dianalisis.</p>
-        </div>
-        <div class="card fade-up delay-4">
-            <h3>Content Writing</h3>
-            <p>Menulis konten yang terstruktur, jelas, dan informatif sesuai tujuan dan kebutuhan.</p>
-        </div>
-    </div>
+  </div>
 </section>
 
-<!-- SKILLS & TOOLS -->
-<section id="tools" class="tools">
-    <h2>My Skills & Tools</h2>
-    <div class="tools-container">
-        <!-- Web Dev -->
-        <div class="tools-group reveal">
-            <h3>Web Development</h3>
-            <div class="tools-grid">
-                <div class="tool-card">
-                    <i class="devicon-html5-plain colored"></i>
-                    <h4>HTML</h4>
-                    <span class="level intermediate">Intermediate</span>
-                </div>
-                <div class="tool-card">
-                    <i class="devicon-php-plain colored"></i>
-                    <h4>PHP</h4>
-                    <span class="level basic">Basic</span>
-                </div>
-                <div class="tool-card">
-                    <i class="devicon-css3-plain colored"></i>
-                    <h4>CSS</h4>
-                    <span class="level basic">Basic</span>
-                </div>
-                <div class="tool-card">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <h4>JavaScript</h4>
-                    <span class="level basic">Basic</span>
-                </div>
-                <div class="tool-card">
-                    <i class="devicon-laravel-plain colored"></i>
-                    <h4>Laravel</h4>
-                    <span class="level basic">Basic</span>
-                </div>
-            </div>
+<section class="skills" id="skills">
+  <div class="section-inner">
+    <div class="section-label">Technical Expertise</div>
+    <h2 class="section-title">Skills & Tools</h2>
+    <div class="skills-wrapper">
+      <div class="skill-group" data-reveal>
+        <h3 class="skill-group-title">Web Development</h3>
+        <div class="skill-chips">
+          <div class="skill-chip"><i class="devicon-html5-plain colored"></i><span>HTML</span><div class="chip-level intermediate">Intermediate</div></div>
+          <div class="skill-chip"><i class="devicon-css3-plain colored"></i><span>CSS</span><div class="chip-level basic">Basic</div></div>
+          <div class="skill-chip"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span><div class="chip-level basic">Basic</div></div>
+          <div class="skill-chip"><i class="devicon-php-plain colored"></i><span>PHP</span><div class="chip-level basic">Basic</div></div>
+          <div class="skill-chip"><i class="devicon-laravel-plain colored"></i><span>Laravel</span><div class="chip-level basic">Basic</div></div>
         </div>
-<!-- Database -->
-        <div class="tools-group reveal">
-            <h3>Database</h3>
-            <div class="tools-grid">
-                <div class="tool-card">
-                    <i class="devicon-mysql-plain colored"></i>
-                    <h4>MySQL</h4>
-                    <span class="level basic">Basic</span>
-                </div>
-                <div class="tool-card">
-                    <i class="devicon-azuresqldatabase-plain colored"></i>
-                    <h4>SQL</h4>
-                    <span class="level intermediate">Intermediate</span>
-                </div>
-            </div>
+      </div>
+      <div class="skill-group" data-reveal>
+        <h3 class="skill-group-title">Database</h3>
+        <div class="skill-chips">
+          <div class="skill-chip"><i class="devicon-mysql-plain colored"></i><span>MySQL</span><div class="chip-level basic">Basic</div></div>
+          <div class="skill-chip"><i class="devicon-azuresqldatabase-plain colored"></i><span>SQL</span><div class="chip-level intermediate">Intermediate</div></div>
         </div>
- <!-- Data -->
-        <div class="tools-group reveal">
-            <h3>Data & Analysis</h3>
-            <div class="tools-grid">
-                <div class="tool-card">
-                    <i class="devicon-python-plain colored"></i>
-                    <h4>Python</h4>
-                    <span class="level intermediate">Intermediate</span>
-                </div>
-                <div class="tool-card">
-                    <i class="devicon-pandas-plain colored"></i>
-                    <h4>pandas</h4>
-                    <span class="level intermediate">Intermediate</span>
-                </div>
-                <div class="tool-card">
-                    <i class="devicon-jupyter-plain colored"></i>
-                    <h4>Jupyter Notebook</h4>
-                    <span class="level intermediate">Intermediate</span>
-                </div>
-            </div>
+      </div>
+      <div class="skill-group" data-reveal>
+        <h3 class="skill-group-title">Data & Analysis</h3>
+        <div class="skill-chips">
+          <div class="skill-chip"><i class="devicon-python-plain colored"></i><span>Python</span><div class="chip-level intermediate">Intermediate</div></div>
+          <div class="skill-chip"><i class="devicon-pandas-plain colored"></i><span>Pandas</span><div class="chip-level intermediate">Intermediate</div></div>
+          <div class="skill-chip"><i class="devicon-jupyter-plain colored"></i><span>Jupyter</span><div class="chip-level intermediate">Intermediate</div></div>
+          <div class="skill-chip"><i class="devicon-matplotlib-plain colored"></i><span>Matplotlib</span><div class="chip-level basic">Basic</div></div>
         </div>
- <!-- Data Visualization -->
-        <div class="tools-group reveal">
-            <h3>Data Visualization</h3>
-            <div class="tools-grid">
-                <div class="tool-card">
-                    <i class="devicon-matplotlib-plain colored"></i>
-                    <h4>Matplotlib</h4>
-                    <span class="level basic">Basic</span>
-                </div>
-            </div>
+      </div>
+      <div class="skill-group" data-reveal>
+        <h3 class="skill-group-title">Tools</h3>
+        <div class="skill-chips">
+          <div class="skill-chip"><i class="devicon-github-plain colored"></i><span>GitHub</span><div class="chip-level basic">Basic</div></div>
+          <div class="skill-chip"><i class="devicon-vscode-plain colored"></i><span>VS Code</span><div class="chip-level intermediate">Intermediate</div></div>
         </div>
-<!-- Tools -->
-        <div class="tools-group reveal">
-            <h3>Tools</h3>
-            <div class="tools-grid">
-                <div class="tool-card">
-                    <i class="devicon-github-plain colored"></i>
-                    <h4>GitHub</h4>
-                    <span class="level basic">Basic</span>
-                </div>
-                <div class="tool-card">
-                    <i class="devicon-vscode-plain colored"></i>
-                    <h4>VS Code</h4>
-                    <span class="level intermediate">Intermediate</span>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </section>
-<section class="portfolio" id="portofolio">
-    <h2>My Project</h2>
-<!-- GRID BARIS PERTAMA -->
-    <div class="portfolio-grid reveal">
-        <div class="portfolio-card fade-up">
-            <div class="slider-container">
-                <div class="slider">
-                    <img src="assets/images/Homepage.png" alt="Website Akademik 1">
-                    <img src="assets/images/pro1.png" alt="Website Akademik 2"> 
-                    <img src="assets/images/pro1.3.png" alt="Website Akademik 3"> 
-                    <img src="assets/images/pro1.4.png" alt="Website Akademik 4">
-                    <img src="assets/images/pro1.3.png" alt="Website Akademik 5">
-                    <img src="assets/images/pro1.5.png" alt="Website Akademik 6">
-                </div>
-                <button class="prev-btn">&lt;</button>
-                <button class="next-btn">&gt;</button>
-            </div>
-            <div class="overlay">
-                <h4>Website Akademik</h4>
-                <a href="https://github.com/HanaZahra-dev/Website-Pendidikan-Berkualitas-" class="btn-view">View Project</a>
-            </div>
+
+<section class="certifications" id="certifications">
+  <div class="section-inner">
+    <div class="section-label">Credentials</div>
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-grid">
+
+      <!-- Cert 1: BNSP -->
+      <div class="cert-card" data-reveal>
+        <div class="cert-header">
+          
+          <span class="cert-badge">BNSP</span>
         </div>
-    
-        <div class="portfolio-card fade-up">
-            <div class="slider-container">
-                <div class="slider">
-                    <img src="assets/images/e-pegawai.png" alt="E-pegawai 1">
-                    <img src="assets/images/pro2.png" alt="E-pegawai 2"> <!-- Tambahan gambar -->
-                    <img src="assets/images/pro2.3.png" alt="E-pegawai 3"> <!-- Tambahan gambar -->
-                </div>
-                <button class="prev-btn">&lt;</button>
-                <button class="next-btn">&gt;</button>
-            </div>
-            <div class="overlay">
-                <h4>E-pegawai</h4>
-                <a href="https://github.com/HanaZahra-dev/E-pegawai-laravel" class="btn-view">View Project</a>
-            </div>
+        <div class="cert-body">
+          <h3>Sertifikasi Kompetensi Database Administrator</h3>
+          <span class="cert-issuer">Badan Nasional Sertifikasi Profesi (BNSP)</span>
+          <ul class="cert-points">
+            <li>Sertifikasi profesi resmi berstandar nasional (SKKNI)</li>
+            <li>Memvalidasi kompetensi dalam pengelolaan & administrasi basis data</li>
+            <li>Mencakup perancangan, implementasi, serta keamanan sistem data</li>
+            <li>Kompetensi teknis siap skala industri</li>
+          </ul>
         </div>
-        <!-- Tambahkan kartu lain jika perlu, dengan struktur yang sama -->
-        <div class="portfolio-card fade-up">
-            <img src="assets/images/data.jpg" alt="Data Analyst">
-            <div class="overlay">
-                <h4>Data Analyst</h4>
-                <a href="https://github.com/HanaZahra-dev/Data-Analyst_Project-1" class="btn-view">View Project</a>
+        <div class="cert-footer">
+            <span class="cert-period"><i class="fas fa-calendar"></i> Mar 2026 – Mar 2029</span>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span class="cert-tag">Active</span>
+              <a href="https://www.linkedin.com/in/hana-zahra-a979313a5" target="_blank" class="cert-verify">
+                <i class="fab fa-linkedin-in"></i> View on LinkedIn
+              </a>
             </div>
+          </div>
         </div>
+
+      <!-- Cert 2: Iner Corp -->
+      <div class="cert-card" data-reveal>
+        <div class="cert-header">
+
+          <span class="cert-badge expert">Expert</span>
+        </div>
+        <div class="cert-body">
+          <h3>Sertifikasi Kompetensi Industri — Sistem Basis Data</h3>
+          <span class="cert-issuer">PT Iner Corp Indonesia</span>
+          <ul class="cert-points">
+            <li>Uji kompetensi berbasis industri di bidang Sistem Basis Data</li>
+            <li>Diraih dengan predikat <strong style="color:#fbbf24">Expert</strong> — keahlian tingkat lanjut</li>
+            <li>Mencakup desain database, penyusunan query, & optimasi sistem</li>
+            <li>Siap diaplikasikan dalam operasional data skala industri</li>
+          </ul>
+        </div>
+        <div class="cert-footer">
+            <span class="cert-period"><i class="fas fa-calendar"></i> Jul 2025 – Jul 2029</span>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span class="cert-tag">Active</span>
+              <a href="https://www.linkedin.com/in/hana-zahra-a979313a5" target="_blank" class="cert-verify">
+                <i class="fab fa-linkedin-in"></i> View on LinkedIn
+              </a>
+            </div>
+          </div>
 
     </div>
- <!-- GRID BARIS CENTER -->
-    <div class="portfolio-center reveal">
-        <div class="portfolio-card fade-up">
-            <img src="assets/images/ERP.jpg" alt="ERP Inventory Database">
-            <div class="overlay">
-                <h4>ERP Inventory Database</h4>
-                <a href="https://github.com/HanaZahra-dev/ERP-Inventory-Database" class="btn-view">View Project</a>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="section-inner">
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">Selected Work</h2>
+    <div class="projects-grid">
+
+      <div class="project-card featured" data-reveal>
+        <div class="project-media">
+          <div class="slider-wrap">
+            <div class="slider" data-total="6">
+              <img src="assets/images/Homepage.png" alt="Website Akademik 1">
+              <img src="assets/images/pro1.png" alt="Website Akademik 2">
+              <img src="assets/images/pro1.3.png" alt="Website Akademik 3">
+              <img src="assets/images/pro1.4.png" alt="Website Akademik 4">
+              <img src="assets/images/pro1.3.png" alt="Website Akademik 5">
+              <img src="assets/images/pro1.5.png" alt="Website Akademik 6">
             </div>
+            <button class="s-prev">&#8592;</button>
+            <button class="s-next">&#8594;</button>
+            <div class="slide-dots"></div>
+          </div>
         </div>
+        <div class="project-info">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span></div>
+          <h3>Website Akademik</h3>
+          <p>Platform pendidikan berbasis web dengan fitur dinamis untuk manajemen konten akademik, data siswa, dan informasi sekolah.</p>
+          <a href="https://github.com/HanaZahra-dev/Website-Pendidikan-Berkualitas-" class="project-link" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project-card" data-reveal>
+        <div class="project-media">
+          <div class="slider-wrap">
+            <div class="slider" data-total="3">
+              <img src="assets/images/e-pegawai.png" alt="E-pegawai 1">
+              <img src="assets/images/pro2.png" alt="E-pegawai 2">
+              <img src="assets/images/pro2.3.png" alt="E-pegawai 3">
+            </div>
+            <button class="s-prev">&#8592;</button>
+            <button class="s-next">&#8594;</button>
+            <div class="slide-dots"></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags"><span>Laravel</span><span>PHP</span><span>MySQL</span></div>
+          <h3>E-Pegawai</h3>
+          <p>Sistem manajemen kepegawaian berbasis Laravel dengan fitur CRUD data pegawai, absensi, dan laporan.</p>
+          <a href="https://github.com/HanaZahra-dev/E-pegawai-laravel" class="project-link" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project-card" data-reveal>
+        <div class="project-media single">
+          <img src="assets/images/data.jpg" alt="Data Analyst Project">
+        </div>
+        <div class="project-info">
+          <div class="project-tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
+          <h3>Data Analyst Project</h3>
+          <p>Analisis dan visualisasi dataset menggunakan Python — eksplorasi data, pembersihan, dan penarikan insight statistik.</p>
+          <a href="https://github.com/HanaZahra-dev/Data-Analyst_Project-1" class="project-link" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project-card" data-reveal>
+        <div class="project-media single">
+          <img src="assets/images/ERP.jpg" alt="ERP Inventory Database">
+        </div>
+        <div class="project-info">
+          <div class="project-tags"><span>SQL</span><span>MySQL</span><span>Database Design</span></div>
+          <h3>ERP Inventory Database</h3>
+          <p>Perancangan skema database ERP untuk manajemen inventaris — relasi tabel, normalisasi, dan optimasi query.</p>
+          <a href="https://github.com/HanaZahra-dev/ERP-Inventory-Database" class="project-link" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
 
     </div>
-
+  </div>
 </section>
 
 <footer>
-    <p>© 2026 Hana Rahmaya Zahra.</p>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <p class="footer-cta-text">Punya project atau ide menarik?</p>
+      <a href="mailto:hanazahrahma@gmail.com" class="footer-email">hanazahrahma@gmail.com</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hana Rahmaya Zahra</span>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/hana-zahra-a979313a5" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/HanaZahra-dev" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/hanarhmy_/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
 </footer>
 
-<!--Efek ketik-->
-<script>
-    const text = "Hana Rahmaya";
-    const typingElement = document.getElementById("typing-name");
-    let index = 0;
-    
-    function typeEffect() {
-        if (index < text.length) {
-            typingElement.innerHTML += text.charAt(index);
-            index++;
-            setTimeout(typeEffect, 100);
-        }
-    }
-    
-    window.onload = typeEffect;
-</script>
-<!--bertahap pas scroll-->
-<script>
-    const reveals = document.querySelectorAll(".reveal");
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("active");
-            }
-        });
-    }, {
-        threshold: 0.2
-    });
-    
-    reveals.forEach(reveal => {
-        observer.observe(reveal);
-    });
-</script>
-<script>
-    window.addEventListener("scroll", function() {
-        const header = document.querySelector("header");
-        if (window.scrollY > 50) {
-            header.style.background = "#141a21";
-            header.style.boxShadow = "0 5px 20px rgba(0,0,0,0.5)";
-        } else {
-            header.style.background = "#1b222b";
-            header.style.boxShadow = "none";
-        }
-    });
-</script>
-<!--buat next/prev dibagian projek-->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const sliders = document.querySelectorAll('.slider');
-    
-    sliders.forEach(slider => {
-        const container = slider.parentElement;
-        const prevBtn = container.querySelector('.prev-btn');
-        const nextBtn = container.querySelector('.next-btn');
-        let currentIndex = 0;
-        const totalSlides = slider.children.length; // Jumlah gambar per slider
-        
-        function updateSlider() {
-            const translateX = -currentIndex * (100 / totalSlides);
-            slider.style.transform = `translateX(${translateX}%)`;
-        }
-        
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateSlider();
-        });
-        
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            updateSlider();
-        });
-    });
-});
-</script>
-<!--ini buat pas mode mobile (navigasi)-->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active'); // Animasi hamburger
-        navMenu.classList.toggle('active'); // Toggle menu
-    });
-
-    // Opsional: Tutup menu saat klik link atau di luar
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        });
-    });
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>
-
